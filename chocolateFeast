@@ -1,0 +1,12 @@
+num, bar = n//c, 0
+total = num
+while True:
+    if num < m:
+        break
+    else:
+        bar+= num % m
+        num = num // m
+        total+=num
+
+
+total+=(num+bar) // m
