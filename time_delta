@@ -1,0 +1,22 @@
+from datetime import datetime, timedelta
+
+
+
+def time_delta(time1, time2):
+	finalTime = 0
+	_format = "%a %d %b %Y %H:%M:%S %z"
+	newTime1 = datetime.strptime(time1, _format)
+	newTime2 = datetime.strptime(time2, _format)
+	timeDelta = abs(newTime2 - newTime1)
+def main():
+	time1 = input()
+	time2 = input()
+	time_delta(time1, time2)
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()
